@@ -1,0 +1,11 @@
+D:\GithubRepos\MovieWise\MovieWise.Domain\bin\Debug\net9.0\MovieWise.Domain.deps.json
+D:\GithubRepos\MovieWise\MovieWise.Domain\bin\Debug\net9.0\MovieWise.Domain.dll
+D:\GithubRepos\MovieWise\MovieWise.Domain\bin\Debug\net9.0\MovieWise.Domain.pdb
+D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\MovieWise.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\MovieWise.Domain.AssemblyInfoInputs.cache
+D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\MovieWise.Domain.AssemblyInfo.cs
+D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\MovieWise.Domain.csproj.CoreCompileInputs.cache
+D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\MovieWise.Domain.dll
+D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\refint\MovieWise.Domain.dll
+D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\MovieWise.Domain.pdb
+D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\ref\MovieWise.Domain.dll

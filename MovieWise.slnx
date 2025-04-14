@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MovieWise.Domain/MovieWise.Domain.csproj" />
+  <Project Path="MovieWise/MovieWise.csproj" />
+</Solution>
