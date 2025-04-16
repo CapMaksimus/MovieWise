@@ -9,3 +9,4 @@ D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\MovieWise.Domain.dll
 D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\refint\MovieWise.Domain.dll
 D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\MovieWise.Domain.pdb
 D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\ref\MovieWise.Domain.dll
+D:\GithubRepos\MovieWise\MovieWise.Domain\obj\Debug\net9.0\MovieWise.Domain.sourcelink.json

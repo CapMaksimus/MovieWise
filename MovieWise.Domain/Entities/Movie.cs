@@ -10,4 +10,5 @@ public class Movie
     public int ReleaseYear { get; set; }
     public string? PosterUrl { get; set; }
     public required List<Genre> Genres { get; set; } = new();
+    public required List<Review> Reviews { get; set; } = new();
 }
