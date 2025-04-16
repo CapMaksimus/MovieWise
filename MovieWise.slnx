@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="MovieWise.Data/MovieWise.Data.csproj" />
   <Project Path="MovieWise.Domain/MovieWise.Domain.csproj" />
+  <Project Path="MovieWise.Service/MovieWise.Service.csproj" />
   <Project Path="MovieWise/MovieWise.csproj" />
 </Solution>

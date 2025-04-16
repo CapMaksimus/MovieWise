@@ -13,5 +13,4 @@ public class AppDbContext : DbContext
     public DbSet<Genre> Genres { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<Review> Reviews { get; set; }
-
 }
