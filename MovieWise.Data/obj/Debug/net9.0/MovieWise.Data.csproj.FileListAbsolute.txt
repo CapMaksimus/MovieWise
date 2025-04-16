@@ -1,0 +1,17 @@
+D:\GithubRepos\MovieWise\MovieWise.Data\bin\Debug\net9.0\MovieWise.Data.deps.json
+D:\GithubRepos\MovieWise\MovieWise.Data\bin\Debug\net9.0\MovieWise.Data.runtimeconfig.json
+D:\GithubRepos\MovieWise\MovieWise.Data\bin\Debug\net9.0\MovieWise.Data.dll
+D:\GithubRepos\MovieWise\MovieWise.Data\bin\Debug\net9.0\MovieWise.Data.pdb
+D:\GithubRepos\MovieWise\MovieWise.Data\bin\Debug\net9.0\MovieWise.Domain.dll
+D:\GithubRepos\MovieWise\MovieWise.Data\bin\Debug\net9.0\MovieWise.Domain.pdb
+D:\GithubRepos\MovieWise\MovieWise.Data\obj\Debug\net9.0\MovieWise.Data.csproj.AssemblyReference.cache
+D:\GithubRepos\MovieWise\MovieWise.Data\obj\Debug\net9.0\MovieWise.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\GithubRepos\MovieWise\MovieWise.Data\obj\Debug\net9.0\MovieWise.Data.AssemblyInfoInputs.cache
+D:\GithubRepos\MovieWise\MovieWise.Data\obj\Debug\net9.0\MovieWise.Data.AssemblyInfo.cs
+D:\GithubRepos\MovieWise\MovieWise.Data\obj\Debug\net9.0\MovieWise.Data.csproj.CoreCompileInputs.cache
+D:\GithubRepos\MovieWise\MovieWise.Data\obj\Debug\net9.0\MovieWis.98F5E8B6.Up2Date
+D:\GithubRepos\MovieWise\MovieWise.Data\obj\Debug\net9.0\MovieWise.Data.dll
+D:\GithubRepos\MovieWise\MovieWise.Data\obj\Debug\net9.0\refint\MovieWise.Data.dll
+D:\GithubRepos\MovieWise\MovieWise.Data\obj\Debug\net9.0\MovieWise.Data.pdb
+D:\GithubRepos\MovieWise\MovieWise.Data\obj\Debug\net9.0\MovieWise.Data.genruntimeconfig.cache
+D:\GithubRepos\MovieWise\MovieWise.Data\obj\Debug\net9.0\ref\MovieWise.Data.dll
