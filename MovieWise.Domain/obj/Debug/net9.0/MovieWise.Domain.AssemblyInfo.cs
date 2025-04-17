@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovieWise.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab7be08203029110f48b9099e53ed8ef78e43d87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17a8297bccd087d305b5e3c0d140459444cb7d98")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovieWise.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovieWise.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

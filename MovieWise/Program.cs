@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MovieWise.Data;
+using MovieWise.Data.Repositories.Implementations;
+using MovieWise.Data.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
+// Регистрируем реализацию для интерфейса
+builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 
 var app = builder.Build();
 

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<MovieWise.Domain.Entities.Movie>
+
+@{
+    ViewData["Title"] = "Movies List";
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+
+    <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Poster</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Genres</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in Model)
+            {
+                <tr>
+                    <td>
+                        @if (!string.IsNullOrEmpty(movie.PosterUrl))
+                        {
+                            <img src="@movie.PosterUrl" 
+                                 class="img-thumbnail" 
+                                 style="max-width: 100px;" 
+                                 alt="@movie.Title poster">
+                        }
+                        else
+                        {
+                            <span class="text-muted">No poster</span>
+                        }
+                    </td>
+                    <td>@movie.Title</td>
+                    <td>@movie.ReleaseYear</td>
+                    <td>
+                        @if (movie.Genres.Any())
+                        {
+                            <div class="genre-badges">
+                                @foreach (var genre in movie.Genres)
+                                {
+                                    <span class="badge bg-secondary me-1">@genre.Name</span>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <span class="text-muted">No genres</span>
+                        }
+                    </td>
+                    <td class="text-truncate" style="max-width: 300px;">@movie.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info mt-3">
+            No movies found in the database.
+        </div>
+    }
+</div>
