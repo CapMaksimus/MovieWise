@@ -1,66 +1,47 @@
-﻿@model IEnumerable<MovieWise.Domain.Entities.Movie>
+﻿@model IEnumerable<MovieWise.ViewModels.Movie.ShowMovieVM>
 
 @{
-    ViewData["Title"] = "Movies List";
+    ViewData["Title"] = "Список фильмов";
 }
 
 <div class="container mt-4">
-    <h1>@ViewData["Title"]</h1>
+    <h1 class="mb-4">@ViewData["Title"]</h1>
 
-    <table class="table table-striped table-hover">
-        <thead class="thead-dark">
-            <tr>
-                <th>Poster</th>
-                <th>Title</th>
-                <th>Year</th>
-                <th>Genres</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
+    @if (Model.Any())
+    {
+        <div class="row">
             @foreach (var movie in Model)
             {
-                <tr>
-                    <td>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
                         @if (!string.IsNullOrEmpty(movie.PosterUrl))
                         {
                             <img src="@movie.PosterUrl" 
-                                 class="img-thumbnail" 
-                                 style="max-width: 100px;" 
-                                 alt="@movie.Title poster">
+                                 class="card-img-top img-fluid" 
+                                 alt="Постер фильма @movie.Title"
+                                 style="max-height: 400px; object-fit: cover;">
                         }
-                        else
-                        {
-                            <span class="text-muted">No poster</span>
-                        }
-                    </td>
-                    <td>@movie.Title</td>
-                    <td>@movie.ReleaseYear</td>
-                    <td>
-                        @if (movie.Genres.Any())
-                        {
-                            <div class="genre-badges">
-                                @foreach (var genre in movie.Genres)
-                                {
-                                    <span class="badge bg-secondary me-1">@genre.Name</span>
-                                }
+                        <div class="card-body">
+                            <h5 class="card-title">@movie.Title</h5>
+                            <p class="text-muted">Год выпуска: @movie.ReleaseYear</p>
+                            <div class="mb-3">
+                                <strong>Жанры:</strong> @movie.GenresList
                             </div>
-                        }
-                        else
-                        {
-                            <span class="text-muted">No genres</span>
-                        }
-                    </td>
-                    <td class="text-truncate" style="max-width: 300px;">@movie.Description</td>
-                </tr>
+                            <p class="card-text">
+                                @(movie.Description?.Length > 100 
+                                    ? $"{movie.Description[..100]}..." 
+                                    : movie.Description)
+                            </p>
+                        </div>
+                    </div>
+                </div>
             }
-        </tbody>
-    </table>
-
-    @if (!Model.Any())
+        </div>
+    }
+    else
     {
-        <div class="alert alert-info mt-3">
-            No movies found in the database.
+        <div class="alert alert-info">
+            Фильмы не найдены.
         </div>
     }
 </div>

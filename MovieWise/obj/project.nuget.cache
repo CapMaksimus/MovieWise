@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Qx3MUD7IEUY=",
+  "dgSpecHash": "ia542Oz/BpM=",
   "success": true,
   "projectFilePath": "D:\\GithubRepos\\MovieWise\\MovieWise\\MovieWise.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\MyPC\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\MyPC\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\MyPC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\MyPC\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",

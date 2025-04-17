@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MovieWise.Data\MovieWise.Data.csproj" />
+    <ProjectReference Include="..\MovieWise.Service\MovieWise.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>

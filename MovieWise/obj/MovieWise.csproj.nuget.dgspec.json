@@ -142,6 +142,75 @@
         }
       }
     },
+    "D:\\GithubRepos\\MovieWise\\MovieWise.Service\\MovieWise.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GithubRepos\\MovieWise\\MovieWise.Service\\MovieWise.Service.csproj",
+        "projectName": "MovieWise.Service",
+        "projectPath": "D:\\GithubRepos\\MovieWise\\MovieWise.Service\\MovieWise.Service.csproj",
+        "packagesPath": "C:\\Users\\MyPC\\.nuget\\packages\\",
+        "outputPath": "D:\\GithubRepos\\MovieWise\\MovieWise.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MyPC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\GithubRepos\\MovieWise\\MovieWise.Data\\MovieWise.Data.csproj": {
+                "projectPath": "D:\\GithubRepos\\MovieWise\\MovieWise.Data\\MovieWise.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\GithubRepos\\MovieWise\\MovieWise\\MovieWise.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -166,6 +235,9 @@
             "projectReferences": {
               "D:\\GithubRepos\\MovieWise\\MovieWise.Data\\MovieWise.Data.csproj": {
                 "projectPath": "D:\\GithubRepos\\MovieWise\\MovieWise.Data\\MovieWise.Data.csproj"
+              },
+              "D:\\GithubRepos\\MovieWise\\MovieWise.Service\\MovieWise.Service.csproj": {
+                "projectPath": "D:\\GithubRepos\\MovieWise\\MovieWise.Service\\MovieWise.Service.csproj"
               }
             }
           }

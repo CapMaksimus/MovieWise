@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovieWise.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17a8297bccd087d305b5e3c0d140459444cb7d98")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f973b3027db51537dae411e37b1567b404fe31a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovieWise.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovieWise.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

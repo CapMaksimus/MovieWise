@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "AutoMapper/14.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -936,10 +952,39 @@
         "runtime": {
           "bin/placeholder/MovieWise.Domain.dll": {}
         }
+      },
+      "MovieWise.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "AutoMapper": "14.0.0",
+          "MovieWise.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MovieWise.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieWise.Service.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/14.0.0": {
+      "sha512": "OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
+      "type": "package",
+      "path": "automapper/14.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.14.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net8.0/AutoMapper.dll",
+        "lib/net8.0/AutoMapper.xml"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -2808,12 +2853,18 @@
       "type": "project",
       "path": "../MovieWise.Domain/MovieWise.Domain.csproj",
       "msbuildProject": "../MovieWise.Domain/MovieWise.Domain.csproj"
+    },
+    "MovieWise.Service/1.0.0": {
+      "type": "project",
+      "path": "../MovieWise.Service/MovieWise.Service.csproj",
+      "msbuildProject": "../MovieWise.Service/MovieWise.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
       "MovieWise.Data >= 1.0.0",
+      "MovieWise.Service >= 1.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4"
     ]
   },
@@ -2844,6 +2895,9 @@
           "projectReferences": {
             "D:\\GithubRepos\\MovieWise\\MovieWise.Data\\MovieWise.Data.csproj": {
               "projectPath": "D:\\GithubRepos\\MovieWise\\MovieWise.Data\\MovieWise.Data.csproj"
+            },
+            "D:\\GithubRepos\\MovieWise\\MovieWise.Service\\MovieWise.Service.csproj": {
+              "projectPath": "D:\\GithubRepos\\MovieWise\\MovieWise.Service\\MovieWise.Service.csproj"
             }
           }
         }

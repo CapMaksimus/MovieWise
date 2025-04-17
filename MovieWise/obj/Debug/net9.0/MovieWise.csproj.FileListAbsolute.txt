@@ -200,3 +200,6 @@ D:\GithubRepos\MovieWise\MovieWise\bin\Debug\net9.0\MovieWise.Domain.pdb
 D:\GithubRepos\MovieWise\MovieWise\obj\Debug\net9.0\MovieWise.csproj.AssemblyReference.cache
 D:\GithubRepos\MovieWise\MovieWise\obj\Debug\net9.0\MovieWise.csproj.Up2Date
 D:\GithubRepos\MovieWise\MovieWise\obj\Debug\net9.0\MovieWise.sourcelink.json
+D:\GithubRepos\MovieWise\MovieWise\bin\Debug\net9.0\AutoMapper.dll
+D:\GithubRepos\MovieWise\MovieWise\bin\Debug\net9.0\MovieWise.Service.dll
+D:\GithubRepos\MovieWise\MovieWise\bin\Debug\net9.0\MovieWise.Service.pdb

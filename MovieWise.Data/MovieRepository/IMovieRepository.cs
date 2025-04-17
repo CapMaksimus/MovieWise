@@ -1,6 +1,6 @@
 using MovieWise.Domain.Entities;
 
-namespace MovieWise.Data.Repositories.Interfaces;
+namespace MovieWise.Data.MovieRepository;
 
 public interface IMovieRepository
 {
