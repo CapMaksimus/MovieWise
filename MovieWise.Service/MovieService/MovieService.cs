@@ -1,6 +1,8 @@
 // Реализация MovieService
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using MovieWise.Data.MovieRepository;
+using MovieWise.Domain.Entities;
 
 namespace MovieWise.Service.MovieService;
 
@@ -15,6 +17,35 @@ public class MovieService : IMovieService
     {
         _movieRepository = movieRepository;
         _mapper = mapper;
+    }
+
+    public async Task<int> CreateMovieAsync(CreateMovieDto movieDto)
+    {
+        try
+        {
+            var movie = _mapper.Map<Movie>(movieDto);
+            var createdMovie = await _movieRepository.AddMovieAsync(movie);
+            return createdMovie.Id;
+        }
+        catch (AutoMapperMappingException ex)
+        {
+            // Логирование ошибок маппинга
+            Console.WriteLine($"Mapping error: {ex.Message}");
+            throw new ArgumentException("Invalid movie data", ex);
+        }
+        catch (DbUpdateException ex)
+        {
+            // Логирование ошибок БД
+            Console.WriteLine($"Database error: {ex.Message}");
+            throw new ApplicationException("Error saving movie", ex);
+        }
+        catch (Exception ex)
+        {
+            // Общее логирование
+            Console.WriteLine($"Unexpected error: {ex.Message}");
+            throw;
+        }
+
     }
 
     public async Task<IEnumerable<ShowMovieDto>> GetAllMoviesAsync()

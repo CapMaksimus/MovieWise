@@ -10,5 +10,7 @@ public class MovieProfile : Profile
         CreateMap<Movie, ShowMovieDto>()
             .ForMember(dest => dest.Genres, 
                 opt => opt.MapFrom(src => src.Genres.Select(g => g.Name)));
+        
+        CreateMap<CreateMovieDto, Movie>();
     }
 }

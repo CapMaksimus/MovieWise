@@ -7,6 +7,13 @@
 <div class="container mt-4">
     <h1 class="mb-4">@ViewData["Title"]</h1>
 
+    <!-- Добавленная админ-панель -->
+    <div class="admin-panel mb-4">
+        <a asp-action="Add" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Добавить фильм
+        </a>
+    </div>
+
     @if (Model.Any())
     {
         <div class="row">
@@ -16,26 +23,24 @@
                     <div class="card h-100 shadow-sm">
                         @if (!string.IsNullOrEmpty(movie.PosterUrl))
                         {
-                            <img src="@movie.PosterUrl" 
-                                 class="card-img-top img-fluid" 
-                                 alt="Постер фильма @movie.Title"
-                                 style="max-height: 400px; object-fit: cover;">
+                            <img src="@movie.PosterUrl" class="card-img-top img-fluid" alt="Постер фильма @movie.Title"
+                                style="max-height: 400px; object-fit: cover;">
                         }
-                        <div class="card-body">
-                            <h5 class="card-title">@movie.Title</h5>
-                            <p class="text-muted">Год выпуска: @movie.ReleaseYear</p>
-                            <div class="mb-3">
-                                <strong>Жанры:</strong> @movie.GenresList
-                            </div>
-                            <p class="card-text">
-                                @(movie.Description?.Length > 100 
-                                    ? $"{movie.Description[..100]}..." 
-                                    : movie.Description)
-                            </p>
+                    <div class="card-body">
+                        <h5 class="card-title">@movie.Title</h5>
+                        <p class="text-muted">Год выпуска: @movie.ReleaseYear</p>
+                        <div class="mb-3">
+                            <strong>Жанры:</strong> @movie.GenresList
                         </div>
-                    </div>
+                        <p class="card-text">
+                            @(movie.Description?.Length > 100
+                                                    ? $"{movie.Description[..100]}..."
+                                                    : movie.Description)
+                    </p>
                 </div>
-            }
+            </div>
+        </div>
+                }
         </div>
     }
     else
